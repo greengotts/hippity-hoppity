@@ -1,0 +1,24 @@
+<?php
+
+$a = mt_rand(1, 6);
+$b = mt_rand(1, 6);
+
+$c = mt_rand(1, 6);
+$d = mt_rand(1, 6);
+
+echo "у тебя выпало $a и $b, у кудахтера выпало $c и $d \n";
+
+$sum1 = $a+$b;
+$sum2 = $c+$d;
+
+if (($a==$b) && ($c==$d)) {
+	echo "какая удача, два дабла! \n";
+} elseif ($sum1>$sum2) {
+	echo "ты победил! \n";
+} elseif ($sum1<$sum2) {
+	echo "машина победила! \n";
+} elseif ($sum1==$sum2) {
+	echo "победила дружба! \n";
+	exit();
+}
+?>
